@@ -7,6 +7,7 @@
     android:layout_height="match_parent">
 
     <com.nekoneko.nekonekodemo.ui.ProcessView
+        android:id="@+id/processView"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_margin="10dp"

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.nekoneko.nekodemos.MainActivity">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -12,12 +10,25 @@
         android:paddingLeft="20dp"
         android:paddingRight="20dp">
 
-        <Button
-            android:id="@+id/processView"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="进度条"
-            android:textAllCaps="false"/>
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/processView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="进度条"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/swipeMenuView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="滑动菜单"
+                android:textAllCaps="false"/>
+        </LinearLayout>
     </ScrollView>
 
 

@@ -6,9 +6,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
-import com.nekoneko.nekonekodemo.fragment.ProcessViewFragment;
+import fragment.ProcessViewFragment;
 
 import butterknife.ButterKnife;
+import fragment.SwipeMenuFragment;
 
 
 /**
@@ -28,6 +29,10 @@ public class DemoActivity extends AppCompatActivity {
             case R.id.processView:
                 fragment = new ProcessViewFragment();
                 break;
+            case R.id.swipeMenuView:
+                fragment = new SwipeMenuFragment();
+                break;
+
         }
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, fragment);

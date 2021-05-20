@@ -18,15 +18,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-    @OnClick(R.id.processView)
+    @OnClick({R.id.processView, R.id.swipeMenuView})
     @Override
     public void onClick(View view) {
         Intent intent = new Intent(this, DemoActivity.class);
-        switch (view.getId()) {
-            case R.id.processView://进度条
-                intent.putExtra("action", view.getId());
-                break;
-        }
+        intent.putExtra("action", view.getId());
         startActivity(intent);
     }
 }

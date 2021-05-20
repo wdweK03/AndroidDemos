@@ -34,6 +34,22 @@ public class ProcessView extends View implements Runnable {
     int processBarColor;
     float processSize;
 
+    public int getProcessBarColor() {
+        return processBarColor;
+    }
+
+    public void setProcessBarColor(int processBarColor) {
+        this.processBarColor = processBarColor;
+    }
+
+    public float getProcessSize() {
+        return processSize;
+    }
+
+    public void setProcessSize(float processSize) {
+        this.processSize = processSize;
+    }
+
     public ProcessView(Context context) {
         super(context);
         initPaint();
