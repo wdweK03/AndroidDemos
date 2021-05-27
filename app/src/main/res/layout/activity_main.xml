@@ -28,6 +28,19 @@
                 android:layout_height="wrap_content"
                 android:text="滑动菜单"
                 android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/drawableStateView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="状态view"/>
+
+            <Button
+                android:id="@+id/video_call_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="环信视频通话"/>
+
         </LinearLayout>
     </ScrollView>
 

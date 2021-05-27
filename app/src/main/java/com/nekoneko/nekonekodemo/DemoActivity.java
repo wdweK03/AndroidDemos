@@ -6,10 +6,13 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 
-import fragment.ProcessViewFragment;
+import com.nekoneko.nekonekodemo.fragment.DrawableStateViewFragment;
+import com.nekoneko.nekonekodemo.fragment.ProcessViewFragment;
 
 import butterknife.ButterKnife;
-import fragment.SwipeMenuFragment;
+
+import com.nekoneko.nekonekodemo.fragment.SwipeMenuFragment;
+import com.nekoneko.nekonekodemo.fragment.VideoCallFragment;
 
 
 /**
@@ -32,10 +35,17 @@ public class DemoActivity extends AppCompatActivity {
             case R.id.swipeMenuView:
                 fragment = new SwipeMenuFragment();
                 break;
+            case R.id.drawableStateView:
+                fragment = new DrawableStateViewFragment();
+                break;
+            case R.id.video_call_fragment:
+                fragment = new VideoCallFragment();
+                break;
 
         }
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.fragment_container, fragment);
         transaction.commit();
     }
+
 }

@@ -9,6 +9,7 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
     }
     buildTypes {
         release {
@@ -16,6 +17,8 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    //use legacy for android 6.0
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -27,4 +30,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //环信
+    //Optional compile for GCM (Google Cloud Messaging).
+    //Optional compile for GCM (Google Cloud Messaging).
+    compile 'com.android.support:multidex:1.0.1'
+    implementation files('libs/hyphenatechat_3.3.6.jar')
+    compile 'com.google.code.gson:gson:2.3.1'
 }
